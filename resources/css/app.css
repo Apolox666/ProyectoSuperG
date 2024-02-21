@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+@layer components{
+    .contenido{
+        @apply w-[90%] max-w-screen-xl mx-auto overflow-hidden;
+    }
+
+    .button{
+
+        @apply bg-principal text-black font-bold py-4 px-10  shadow-md w-max rounded-full hover:bg-blue-300;
+    }
+ 
+}
