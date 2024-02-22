@@ -30,7 +30,7 @@
                     <a class="hover:text-blue-600 hidden md:flex" href="">Inicio</a>
                 </li>
                 <li>
-                    <a class="hover:text-blue-600 hidden md:flex" href="http://localhost/assist/public/#que_es">Que es MSU Assist</a>
+                    <a class="hover:text-blue-600 hidden md:flex" href="http://localhost/ProyectoSuperG/public/#que_es">Que es MSU Assist</a>
                 </li>
                 @if (Route::has('login'))
                     <li>
@@ -39,9 +39,9 @@
                                 href="">Dashboard</a>
                         </li>
                     @else
-                        <a href="{{ route('login') }}"
+                        <a href="{{route('login')}}"
                             class="text-white py-2 px-6 bg-blue-600 rounded-full hover:bg-blue-400 shadow-lg"
-                            wire:navigate>Login</a>
+                            >Login</a>
                     @endauth
                 @endif
             </ul>
