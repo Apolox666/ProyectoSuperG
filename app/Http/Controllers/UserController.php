@@ -66,7 +66,6 @@ class UserController extends Controller
             'name.regex' => 'El campo Nombre solo debe contener letras y espacios.',
             'email.email' => 'Ingrese una dirección de correo electrónico válida.',
             'email.unique' => 'Este correo electrónico ya está tomado.',
-            'password_confirmation.confirmed' => 'Las contraseñas no coinciden.',
             'password.confirmed' => 'Las contraseñas no coinciden.',
             // Añade más mensajes según tus necesidades
         ];
@@ -75,7 +74,7 @@ class UserController extends Controller
             'name' => ['required', 'string', 'max:28', 'regex:/^[a-zA-Z\s]+$/'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            'password_confirmation' => ['required', 'confirmed']
+            'password_confirmation' => ['required']
         ], $messages);
 
         try {
@@ -133,7 +132,6 @@ class UserController extends Controller
             'name' => ['required', 'string', 'max:28', 'regex:/^[a-zA-Z\s]+$/'],
             'email' => ['required', 'string', 'email', 'max:255'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            'password_confirmation' => ['required', 'confirmed']
         ], $messages);
 
         // Verificar la unicidad del correo electrónico excluyendo el usuario actual

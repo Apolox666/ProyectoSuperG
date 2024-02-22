@@ -43,10 +43,10 @@
         <div class="mt-12">
             <x-input-label for="password_confirmation" :value="__('Confirmar Contraseña')" />
             <x-text-input id="password_confirmation"
-                class="block mt-1 w-full {{ $errors->has('password_confirmation') ? 'border-red-600' : '' }}"
+                class="block mt-1 w-full {{ $errors->has('password') ? 'border-red-600' : '' }}"
                 type="password" name="password_confirmation"  autocomplete="new-password" />
 
-            @error('password_confirmation')
+            @error('password')
                 <p class="text-red-500 text-xs">{{ $message }}</p>
             @enderror
         </div>
