@@ -17,9 +17,10 @@
 
 <body class="flex flex-col min-h-screen bg-neutral-300">
     <div class="flex-1 flex">
-        <aside class="w-64 bg-white">
+        <aside class="w-64 bg-white flex-shrink-0">
             <x-sidebar />
         </aside>
+        
 
         <main class="flex-1 flex flex-col">
            <x-navbar />

@@ -30,7 +30,7 @@
                     <a class="hover:text-blue-600 hidden md:flex" href="">Inicio</a>
                 </li>
                 <li>
-                    <a class="hover:text-blue-600 hidden md:flex" href="http://localhost/ProyectoSuperG/public/#que_es">Que es MSU Assist</a>
+                    <a class="hover:text-blue-600 hidden md:flex" href="http://localhost/assist/public/#que_es">Que es MSU Assist</a>
                 </li>
                 @if (Route::has('login'))
                     <li>
@@ -39,26 +39,29 @@
                                 href="">Dashboard</a>
                         </li>
                     @else
-                        <a href="{{route('login')}}"
+                        <a href="{{ route('login') }}"
                             class="text-white py-2 px-6 bg-blue-600 rounded-full hover:bg-blue-400 shadow-lg"
-                            >Login</a>
+                            wire:navigate>Login</a>
                     @endauth
                 @endif
             </ul>
         </nav>
     </header>
 
-    <section class="flex py-40 w-full h-full image relative z-0">
-        <div class="flex mx-auto max-w-[1200px] w-[90%]  overflow-hidden h-70vh  flex-col text-center items-center h-full py-40 gap-14">
-            <h2 class="font-bold text-5xl text-white">Consulta una habilidad de la MSU</h2>
-            <div class="relative w-full">
-                <input type="text" class="w-full rounded-full pl-14 pr-4 py-2 focus:border-blue-700" placeholder="Buscar...">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3">
-                    <i class="fas fa-search text-blue-600"></i>
-                </div>
+   <section class="  py-20 md:py-0 w-full h-screen image relative z-0">
+    <div class="flex flex-col text-center justify-center items-center  max-w-[1200px] w-[90%] mx-auto  h-full">
+        <h2 class="font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-10 md:mb-20">Consulta una habilidad de la MSU</h2>
+        <div class="relative w-full">
+            <input type="text" class="w-full rounded-full pl-14 pr-4 py-2 focus:border-blue-700" placeholder="Buscar...">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                <i class="fas fa-search text-blue-600"></i>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+    
+    
 
     <section class=" py-20 w-full h-full" id="que_es">
         <div class="text-center gap-10 flex mx-auto max-w-[1200px] w-[90%] overflow-hidden flex-col">

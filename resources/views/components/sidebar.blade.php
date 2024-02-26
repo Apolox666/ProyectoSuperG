@@ -1,5 +1,5 @@
 <aside class="flex h-screen fixed">
-    <div class=" p-6   w-64 bg-gray-800 shadow-lg h-full">
+    <div class="p-6 bg-gray-800 shadow-lg h-full md:w-64 md:flex-shrink-0">
         <a href="{{ route('dashboard') }}">
             <img class=" mx-auto pb-6" src="{{ asset('images/logo.png') }}" width="160px" alt="">
         </a>
