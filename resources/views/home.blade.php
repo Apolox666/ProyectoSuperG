@@ -36,7 +36,7 @@
                     <li>
                         @auth
                             <a class="text-white py-2 px-6 bg-blue-600 rounded-full hover:bg-blue-400 shadow-lg"
-                                href="">Dashboard</a>
+                                href="{{route('dashboard')}}">Dashboard</a>
                         </li>
                     @else
                         <a href="{{ route('login') }}"

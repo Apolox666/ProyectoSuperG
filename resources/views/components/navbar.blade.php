@@ -1,10 +1,19 @@
-<header class="bg-gray-800 py-6 px-12 flex items-center">
-    <form method="POST" id="logout-form" action="{{ route('logout') }}" class="ml-auto " x-data>
-        @csrf
-        <button type="button" class="text-red-500 hover:text-red-400" onclick="confirmLogout()">Cerrar sesión</button>
-    </form>
+<header class="header bg-white shadow py-4 px-4">
+    <div class="header-content flex items-center flex-row">
+        
+        <div class="flex ml-auto flex-row items-center gap-10">
+            <form method="POST" id="logout-form" action="{{ route('logout') }}" class="ml-auto " x-data>
+                @csrf
+                <div class="flex text-red-600">
+                   
+                    <button type="button" class="text-red-600 hover:text-red-400 font-bold" onclick="confirmLogout()">Cerrar
+                        sesión</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
 </header>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     function confirmLogout() {
         Swal.fire({

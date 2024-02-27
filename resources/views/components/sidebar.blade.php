@@ -1,69 +1,126 @@
-<aside class="flex h-screen fixed">
-    <div class="p-6 bg-gray-800 shadow-lg h-full md:w-64 md:flex-shrink-0">
-        <a href="{{ route('dashboard') }}">
-            <img class=" mx-auto pb-6" src="{{ asset('images/logo.png') }}" width="160px" alt="">
-        </a>
 
-       
-        <ul class="mt-10">
-            <h6 class=" text-principal text-xl font-bold p-4 ">Utilidades</h6>
-            <a href="{{ route('user.index') }}">
-                <li class=" p-6  font-bold text-white items-center flex gap-4 hover:bg-gray-700 rounded-lg">
-                    <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 14 18">
-                        <path
-                            d="M7 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm2 1H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
-                    </svg>
-                    <p>Usuarios</p>
-                </li>
-            </a>
-            <a href="{{route('computer.index')}}">
-                <li class="p-6 mt-2 font-bold text-white items-center flex gap-4 hover:bg-gray-700 rounded-lg">
-                    <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 20 20">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 14v4m-4 1h8M1 10h18M2 1h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
-                    </svg>
-                    <p>Equipos</p>
-                </li>
-            </a>
-            <a href="">
-                <li class=" p-6 mt-2 font-bold text-white items-center flex gap-4 hover:bg-gray-700 rounded-lg">
-                    <svg class="w-6 h-6 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 20 20">
-                        <path fill="currentColor"
-                            d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z" />
-                    </svg>
-                    <p>Calendario</p>
-                </li>
-            </a>
-        </ul>
-        
-        <ul class="mt-6">
-            <h6 class=" text-principal text-xl font-bold p-4">Herramientas</h6>
-            <a href="">
-                <li class=" p-6 mt-2 font-bold  text-white items-center flex gap-4 hover:bg-gray-700 rounded-lg ">
-                    <img src="{{ asset('img/icons/soporte.png') }}" width="30px" alt="">
-                    <p>Soporte</p>
-                </li>
-            </a>
-            <a href="">
-                <li class="p-6 mt-2 font-bold text-white items-center flex gap-4 hover:bg-gray-700 rounded-lg">
-                    <img src="{{ asset('img/icons/configuracion.png') }}" width="30px" alt="">
-                    <p>Configuracion</p>
-                </li>
-            </a>
-        </ul>
-      
+<aside
+    class=" sidebar w-64 md:shadow transform -translate-x-full md:translate-x-0 transition-transform duration-150 ease-in bg-blue-500">
 
-           
-            
-       
-
-
-        
+    <div class="sidebar-header flex items-center justify-center py-4">
+        <div class=" justify-center">
+            <img src="{{ asset('images/logo-supergiros.png') }}" width="200px">
+        </div>
     </div>
-    <div>
+    <div class="sidebar-content px-4 py-6 font-bold">
+        <ul class="flex flex-col w-full">
+            <li class="my-px">
+                <a href="{{ route('dashboard') }}"
+                    class="flex flex-row items-center h-10 px-3 rounded-lg text-white hover:bg-gray-100 hover:text-black ">
+                    <span class="flex items-center justify-center text-lg">
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </span>
+                    <span class="ml-3">Dashboard</span>
+                </a>
+            </li>
+            <li class="my-px">
+                <span class="flex font-medium text-sm text-gray-300 px-4 my-4 uppercase">Projects</span>
+            </li>
+            <li class="my-px">
+                <a href="{{ route('user.index') }}"
+                    class="flex flex-row items-center h-10 px-3 rounded-lg active text-white hover:bg-gray-100 hover:text-black">
+                    <span class="flex items-center justify-center text-lg">
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </span>
+                    <span class="ml-3">Usuarios</span>
+                </a>
+            </li>
 
+            <li class="my-px">
+                <a href="#"
+                    class="flex flex-row items-center h-10 px-3 rounded-lg text-gray-300 hover:bg-gray-100 hover:text-black">
+                    <span class="flex items-center justify-center text-lg">
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                    </span>
+                    <span class="ml-3">Tasks</span>
+                </a>
+            </li>
+            <li class="my-px">
+                <a href="#"
+                    class="flex flex-row items-center h-10 px-3 rounded-lg text-white hover:bg-gray-100 hover:text-black">
+                    <span class="flex items-center justify-center text-lg">
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </span>
+                    <span class="ml-3">Clients</span>
+
+                </a>
+            </li>
+
+            <li class="my-px">
+                <span class="flex font-medium text-sm text-gray-300 px-4 my-4 uppercase">Account</span>
+            </li>
+            <li class="my-px">
+                <a href="#"
+                    class="flex flex-row items-center h-10 px-3 rounded-lg text-white hover:bg-gray-100 hover:text-black">
+                    <span class="flex items-center justify-center text-lg">
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </span>
+                    <span class="ml-3">Profile</span>
+                </a>
+            </li>
+            <li class="my-px">
+                <a href="#"
+                    class="flex flex-row items-center h-10 px-3 rounded-lg text-white hover:bg-gray-100 hover:text-black">
+                    <span class="flex items-center justify-center text-lg">
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                    </span>
+                    <span class="ml-3">Notifications</span>
+                </a>
+            </li>
+            <li class="my-px">
+                <a href="#"
+                    class="flex flex-row items-center h-10 px-3 rounded-lg text-white hover:bg-gray-100 hover:text-black">
+                    <span class="flex items-center justify-center text-lg">
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </span>
+                    <span class="ml-3">Settings</span>
+                </a>
+            </li>
+            <li class="my-px">
+                <a href="#"
+                    class="flex flex-row items-center h-10 px-3 rounded-lg text-white hover:bg-gray-100 hover:text-black">
+                    <span class="flex items-center justify-center text-lg">
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path
+                                d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+                        </svg>
+                    </span>
+                    <span class="ml-3">Logout</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </aside>

@@ -9,27 +9,34 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Styles -->
 
 </head>
 
-<body class="flex flex-col min-h-screen bg-neutral-300">
-    <div class="flex-1 flex">
-        <aside class="w-64 bg-white flex-shrink-0">
-            <x-sidebar />
-        </aside>
-        
+<body>
+    <!-- component -->
+    <div class="flex flex-row min-h-screen bg-gray-100 text-gray-800">
+        <!-- Sidebar -->
+        <x-sidebar />
+        <!-- end Sidebar -->
+        <main class="main flex flex-col flex-grow -ml-64 md:ml-0 transition-all duration-150 ease-in">
+            <!-- Nabvar -->
+            <x-navbar />
+            <!-- end Navbar -->
+            <div class="main-content flex flex-col flex-grow p-4">
+                @yield('content')
 
-        <main class="flex-1 flex flex-col">
-           <x-navbar />
 
-            <div class="flex-1 overflow-y-auto p-4">
-                <div class="bg-neutral-100 shadow-xl rounded-3xl p-6 h-full">
-                    @yield('content')
-                </div>
             </div>
+            <footer class="footer px-4 py-6">
+                <div class="footer-content">
+                    <p class="text-sm text-gray-600 text-center">© Brandname 2020. All rights reserved. <a
+                            href="https://twitter.com/iaminos">by iAmine</a></p>
+                </div>
+            </footer>
         </main>
     </div>
 </body>
