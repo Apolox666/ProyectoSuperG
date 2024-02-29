@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- Scripts -->
+  
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Styles -->
-
+   
 </head>
 
 <body>
@@ -29,7 +29,6 @@
             <div class="main-content flex flex-col flex-grow p-4">
                 @yield('content')
 
-
             </div>
             <footer class="footer px-4 py-6">
                 <div class="footer-content">
@@ -39,5 +38,6 @@
             </footer>
         </main>
     </div>
+   
 </body>
 </html>

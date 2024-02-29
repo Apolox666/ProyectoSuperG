@@ -8,8 +8,10 @@
                    
                     <button type="button" class="text-red-600 hover:text-red-400 font-bold" onclick="confirmLogout()">Cerrar
                         sesión</button>
+                        
                 </div>
                 
+
             </form>
         </div>
     </div>
